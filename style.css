@@ -1,0 +1,71 @@
+:root {
+    --light-background: #efefef;
+    --light-text: #0a0a0a;
+    --dark-background: #0a0a0a;
+    --dark-text: #dfdfdf;
+
+    --background: var(--light-background);
+    --text-color: var(--light-text);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: var(--dark-background);
+        --text-color: var(--dark-text)
+    }
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background: var(--background);
+    color: var(--text-color);
+}
+
+#container {
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stuff > * {
+    display:block;
+    line-height: 1;
+}
+
+#line {
+    color: var(--text-color);
+    text-decoration: none;
+}
+#line > * {
+    vertical-align: middle;
+}
+
+.the {
+    font-size: 64px;
+    font-family: 'Pacifico', cursive;
+    line-height: 1;
+}
+
+.key_icon {
+    font-size: 112px;
+}
+
+.main_text {
+    font-size: 84px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.key {
+    font-size: 64px;
+    font-family: 'Pacifico', cursive;
+    line-height: 1;
+    text-align: right;
+}
+
+.detail {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 32px;
+}
